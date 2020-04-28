@@ -35,7 +35,8 @@ export default {
     AddTodo() {
       this.tasks.unshift({
         name: this.name,
-        date: this.date
+        date: this.date,
+        status: false,
       });
     }
   }
