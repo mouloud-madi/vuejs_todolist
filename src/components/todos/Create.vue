@@ -10,10 +10,10 @@
               <button class="btn btn-info" :disabled="!name || !date">+ Add</button>
             </div>
           </form>
+           <List v-bind:tasks="tasks"/>
         </div>
       </div>
     </div>
-  <List v-bind:tasks="tasks"/>
   </div>
 </template>
 
@@ -37,7 +37,6 @@ export default {
         name: this.name,
         date: this.date
       });
-      console.log(this.tasks);
     }
   }
 };
