@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-   <navbar/>
+   <Navbar/>
+   <Create/>
   </div>
 </template>
 
 <script>
-import Navbar from './components/layouts/Navbar.vue'
+import Navbar from './components/layouts/Navbar'
+import Create from './components/todos/Create'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Create,
   }
 }
 </script>
